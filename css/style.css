@@ -158,17 +158,33 @@ video{
   width: 100%;
 }
 
+.page2 p{
+  font-size: 0.8em;
+}
+
+.page2 h3{
+  font-size: 1.2em;
+  font-family: Jazz LET, fantasy;
+}
+
+#pgr_font{
+  height: auto;
+  width: 60%;
+  background-color: black;
+  margin-top: 5%
+}
+
 .content-box{
   border-style:solid;
   border-width: 0.5em;
-  border-radius: 25px;
-  border-color: rgb(235, 140, 16);
+  border-color: rgb(60, 232, 86);
   background: white;
   padding-left: 10%;
   padding-right: 10%;
-  width: 50%;
+  padding-bottom: 10%;
+  width: 70%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .top_left{
@@ -177,7 +193,7 @@ video{
   transform: translateX(-95%);
   max-width: 100%;
   position: relative;
-  width: 100px;
+  width: 50px;
   height: auto;
   margin: 0;
 }
@@ -188,18 +204,18 @@ video{
   transform: translateX(+95%);
   max-width: 100%;
   position: relative;
-  width: 100px;
+  width: 50px;
   height: auto;
   margin: 0;
 }
 
 .bottom_left{
   float: left;
-  transform: translateY(+85%);
+  transform: translateY(+80%);
   transform: translateX(-95%);
   max-width: 100%;
   position: relative;
-  width: 100px;
+  width: 50px;
   height: auto;
   margin: 0;
 }
@@ -210,7 +226,7 @@ video{
   transform: translateX(+95%);
   max-width: 100%;
   position: relative;
-  width: 100px;
+  width: 50px;
   height: auto;
   margin: 0;
 }
@@ -221,4 +237,85 @@ video{
 }
 .pg3_wrapper{
   width: 100%;
+}
+
+/*page2 media queries*/
+@media (min-width: 600px){
+  .page2 p{
+    font-size: 1em;
+  }
+  
+  .page2 h3{
+    font-size: 1.5em;
+    font-family: Jazz LET, fantasy;
+  }
+
+  .h4{
+	color: (9, 35, 43);
+  }
+	
+  .content-box{
+    border-style:solid;
+    border-width: 0.5em;
+    border-radius: 25px;
+    border-color: rgb(245, 192, 47);
+    background: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 60%;
+  }
+
+  .top_left{
+    width: 70px;
+  }
+
+  .top_right{
+    width: 70px;
+  }
+
+  .bottom_left{
+    float: left;
+    width: 70px;
+  }
+
+  .bottom_right{
+    width: 70px;
+  }
+}
+
+@media (min-width: 1020px){
+  .page2 p{
+	  font-size: 1.2em;
+  }
+  .page2 h3{
+  font-size: 1.5em;
+  font-family: Jazz LET, fantasy;
+}
+
+  .h4{
+	  color: (9, 35, 43);
+  }
+  
+  .content-box{
+    border-style:solid;
+    border-radius: 25px;
+    border-color: rgb(235, 140, 16);
+    width: 50%;
+  }
+
+  .top_left{
+    width: 100px;
+  }
+
+  .top_right{
+    width: 100px;
+  }
+
+  .bottom_left{
+    width: 100px
+  }
+
+  .bottom_right{
+    width: 100px;
+  }
 }
