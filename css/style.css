@@ -63,7 +63,7 @@ ul li{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 10%;
+  margin-top: 5%;
   border: 8px solid;
   background-color: white;
   font-family: Impact, sans-serif;
@@ -165,6 +165,10 @@ video{
 .page2 h3{
   font-size: 1.2em;
   font-family: Jazz LET, fantasy;
+}
+
+#music{
+	display: none;
 }
 
 #pgr_font{
@@ -318,4 +322,22 @@ video{
   .bottom_right{
     width: 100px;
   }
+}
+
+/*map*/
+#map-container{
+	border-style:solid;
+    border-width: 0.5em;
+    border-color: rgb(206, 89, 55);
+	height: 80vh;
+	margin: 10%;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#map{
+	height: 80vh;
+	width: 100%;
 }
