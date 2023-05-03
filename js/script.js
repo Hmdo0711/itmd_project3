@@ -1,7 +1,7 @@
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-	center: {lat:17.458582, lng:107.042357},
-	zoom: 6
+  center: {lat:17.458582, lng:107.042357},
+  zoom: 6
   });
 
   var locations = [
@@ -12,23 +12,21 @@ function initMap() {
     ['Phong Nha-Ke Bang National Park, Quang Binh', 17.5552645, 106.112304095671, 2],
     ['Phu Quoc Island, Kien Giang', 10.158625, 103.98402, 1]
   ];
-
   var infowindow = new google.maps.InfoWindow();
   for (i = 0; i < locations.length; i++) {  
-	marker = new google.maps.Marker({
-	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-	map: map
-  });
-  
-	google.maps.event.addListener(marker, 'click', (function(marker, i) {
-	  return function() {
-	    infowindow.setContent(locations[i][0]);
-	    infowindow.open(map, marker);
-	  }
-	})(marker, i));
+    marker = new google.maps.Marker({
+    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+    map: map
+    });
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    return function() {
+    infowindow.setContent(locations[i][0]);
+    infowindow.open(map, marker);
+    }
+    })
+    (marker, i));
   }
 }
-
 var audio = document.getElementById("music");
 	audio.autoplay = true;
 	audio.load();
